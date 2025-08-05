@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Cliente]
+(
+	[IdCliente] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Nome] NVARCHAR(100) NOT NULL,
+	[Email] NVARCHAR(100) NOT NULL,
+	[Telefone] NVARCHAR(20),
+	[DataCadastro] DATE DEFAULT GETDATE()
+	
+);
