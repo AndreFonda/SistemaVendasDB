@@ -61,5 +61,8 @@
     <Build Include="Cliente.table.sql" />
     <Build Include="Categoria.table.sql" />
     <Build Include="Produto.table.sql" />
+    <Build Include="Pedido.table.sql" />
+    <Build Include="ItemPedido.table.sql" />
+    <Build Include="Pagamento.sql" />
   </ItemGroup>
 </Project>

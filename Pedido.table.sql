@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Pedido]
+(
+	[IdPedido] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[DataPedido] DATETIME NOT NULL DEFAULT GETDATE(),
+	[IdCliente] INT NOT NULL,
+	[Status] NVARCHAR(50) NOT NULL,
+	CONSTRAINT FK_Pedido_Cliente FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente)
+);
